@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e24908ab-614e-4549-af68-89b453612cbc">
+  <producedTypes>
+    <objectType typeId="c422d1a3-d05f-4289-9727-9b73ad1b3f60" valueTypeId="b7b1e841-3d9d-4b24-8fb6-95abb2f55e33"/>
+  </producedTypes>
+  <name>ВПФ_УПД_ЗНВП</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВПФ УПД Заказ на внутреннее потребление</value>
+  </synonym>
+  <comment>CE006-22</comment>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="c49ef483-d36e-43a7-8276-f0e5d6c262c9"/>
+  <defaultForm>ExternalDataProcessor.ВПФ_УПД_ЗНВП.Form.Форма</defaultForm>
+  <attributes uuid="d54f7f53-86f0-42a4-ac72-e54d677a28dd">
+    <name>СсылкаНаДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка на документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаказНаВнутреннееПотребление</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="3e246ec9-4488-4f5b-8252-308983b78a08">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2fbe576b-c3fc-41d9-b874-e8f1c709c0b5">
+    <name>ПФ_MXL_УниверсальныйПередаточныйДокумент1096_ru</name>
+    <synonym>
+      <key>ru</key>
+      <value>Универсальный передаточный документ (в редакции Постановления № 1096) </value>
+    </synonym>
+  </templates>
+</mdclass:ExternalDataProcessor>

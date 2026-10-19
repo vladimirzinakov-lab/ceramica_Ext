@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83578fc0-7767-4106-9512-d96518c9e874">
+  <producedTypes>
+    <objectType typeId="46ac0bc3-b0df-4c23-b373-66ec1f4db282" valueTypeId="24c766b0-bcdc-4810-9de4-7c9bec34d6dd"/>
+  </producedTypes>
+  <name>CE089_01_ОбновлениеСостоянийРекламаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>CE089_01 Обновление состояний рекламаций</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="2f7ba956-a8f5-48c1-98ae-e23d96ee8805"/>
+  <defaultForm>ExternalDataProcessor.CE089_01_ОбновлениеСостоянийРекламаций.Form.Форма</defaultForm>
+  <forms uuid="8d4a5a94-27ce-4dcd-b3a4-870dd7d3f7ed">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновление состояний рекламаций</value>
+    </synonym>
+  </forms>
+</mdclass:ExternalDataProcessor>

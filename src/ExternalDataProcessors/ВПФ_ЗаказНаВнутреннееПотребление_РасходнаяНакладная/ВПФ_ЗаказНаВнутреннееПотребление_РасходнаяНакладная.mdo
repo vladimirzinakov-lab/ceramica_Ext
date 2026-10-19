@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="64598367-4e16-4cac-88cf-571ea49561ab">
+  <producedTypes>
+    <objectType typeId="3c221b65-5e61-45e0-88d5-1bb0505f4418" valueTypeId="d7ef0791-2ca0-4c05-bae0-1ad8217d1440"/>
+  </producedTypes>
+  <name>ВПФ_ЗаказНаВнутреннееПотребление_РасходнаяНакладная</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВПФ заказ на внутреннее потребление расходная накладная</value>
+  </synonym>
+  <comment>CE006-23</comment>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="e7ba4915-c288-4af8-a05e-d8b839ee665f"/>
+  <defaultForm>ExternalDataProcessor.ВПФ_ЗаказНаВнутреннееПотребление_РасходнаяНакладная.Form.Форма</defaultForm>
+  <attributes uuid="877911b3-1784-44f9-aa7a-2a1d51b20d47">
+    <name>СсылкаНаОбъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка на объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаказНаВнутреннееПотребление</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="984e5cbe-86b7-4308-bd72-645c08be383e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f3ae8c80-149a-4896-9709-4b4db9f35b83">
+    <name>ПФ_MXL_РасходнаяНакладная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходная накладная</value>
+    </synonym>
+  </templates>
+</mdclass:ExternalDataProcessor>

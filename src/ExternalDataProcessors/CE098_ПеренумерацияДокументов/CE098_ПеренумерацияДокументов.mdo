@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7204f64c-1273-4daa-b54b-8942ffc843fc">
+  <producedTypes>
+    <objectType typeId="9e4c7ffd-a434-48a3-a97b-9eab08cd2f1b" valueTypeId="9446ae1b-468b-4ccb-a938-82d41359688e"/>
+  </producedTypes>
+  <name>CE098_ПеренумерацияДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>CE098 Перенумерация документов</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="2792a20a-dd39-4601-9d9d-91ccac29029d"/>
+  <defaultForm>ExternalDataProcessor.CE098_ПеренумерацияДокументов.Form.Форма</defaultForm>
+  <forms uuid="c699eae4-bb37-40fe-86bb-c1f14301e679">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExternalDataProcessor>
