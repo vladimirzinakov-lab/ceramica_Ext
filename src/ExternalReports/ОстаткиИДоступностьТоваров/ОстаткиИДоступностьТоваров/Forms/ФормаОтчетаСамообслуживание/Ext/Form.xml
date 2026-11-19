@@ -37,7 +37,6 @@
 		<Table name="СкладыОтбора" id="19">
 			<Representation>List</Representation>
 			<CommandBarLocation>None</CommandBarLocation>
-			<AutoMaxHeight>false</AutoMaxHeight>
 			<HeightControlVariant>UseContentHeight</HeightControlVariant>
 			<VerticalLines>false</VerticalLines>
 			<DataPath>СкладыОтбора</DataPath>
@@ -73,12 +72,6 @@
 				<Event name="OnChange">СкладыОтбораПриИзменении</Event>
 			</Events>
 			<ChildItems>
-				<InputField name="СкладыОтбораСклад" id="23">
-					<DataPath>СкладыОтбора.Склад</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<ContextMenu name="СкладыОтбораСкладКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="СкладыОтбораСкладРасширеннаяПодсказка" id="25"/>
-				</InputField>
 				<CheckBoxField name="СкладыОтбораОтметка" id="26">
 					<DataPath>СкладыОтбора.Отметка</DataPath>
 					<Title>
@@ -95,6 +88,12 @@
 						<Event name="OnChange">СкладыОтбораОтметкаПриИзменении</Event>
 					</Events>
 				</CheckBoxField>
+				<InputField name="СкладыОтбораСклад" id="23">
+					<DataPath>СкладыОтбора.Склад</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СкладыОтбораСкладКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СкладыОтбораСкладРасширеннаяПодсказка" id="25"/>
+				</InputField>
 			</ChildItems>
 		</Table>
 		<UsualGroup name="СкладДоступностьПоДатам" id="14">
@@ -110,6 +109,18 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СкладДоступностьПоДатамРасширеннаяПодсказка" id="15"/>
 			<ChildItems>
+				<InputField name="ГруппаНоменклатуры" id="60">
+					<DataPath>ГруппаНоменклатуры</DataPath>
+					<Width>30</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<DropListButton>true</DropListButton>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ГруппаНоменклатурыКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ГруппаНоменклатурыРасширеннаяПодсказка" id="62"/>
+					<Events>
+						<Event name="OnChange">ГруппаНоменклатурыПриИзменении</Event>
+					</Events>
+				</InputField>
 				<InputField name="Артикул" id="11">
 					<DataPath>Артикул</DataPath>
 					<Width>30</Width>
@@ -245,6 +256,21 @@
 					</Type>
 				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="ГруппаНоменклатуры" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 </Form>
