@@ -25,6 +25,7 @@
 	<DetailsData>ДанныеРасшифровки</DetailsData>
 	<ReportFormType>Main</ReportFormType>
 	<AutoShowState>Auto</AutoShowState>
+	<CustomSettingsFolder>114:02023637-7868-4a5f-8576-835a76e0c9ba</CustomSettingsFolder>
 	<ReportResultViewMode>Auto</ReportResultViewMode>
 	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -32,6 +33,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПередЗакрытием</Event>
 	</Events>
 	<ChildItems>
 		<Table name="СкладыОтбора" id="19">
@@ -109,17 +111,11 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СкладДоступностьПоДатамРасширеннаяПодсказка" id="15"/>
 			<ChildItems>
-				<InputField name="ГруппаНоменклатуры" id="60">
-					<DataPath>ГруппаНоменклатуры</DataPath>
-					<Width>30</Width>
-					<HorizontalStretch>false</HorizontalStretch>
-					<DropListButton>true</DropListButton>
-					<ClearButton>true</ClearButton>
-					<ContextMenu name="ГруппаНоменклатурыКонтекстноеМеню" id="61"/>
-					<ExtendedTooltip name="ГруппаНоменклатурыРасширеннаяПодсказка" id="62"/>
-					<Events>
-						<Event name="OnChange">ГруппаНоменклатурыПриИзменении</Event>
-					</Events>
+				<InputField name="КомпоновщикНастроекФиксированныеНастройкиОтбор" id="87">
+					<DataPath>Отчет.SettingsComposer.Settings.Filter</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КомпоновщикНастроекФиксированныеНастройкиОтборКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="КомпоновщикНастроекФиксированныеНастройкиОтборРасширеннаяПодсказка" id="89"/>
 				</InputField>
 				<InputField name="Артикул" id="11">
 					<DataPath>Артикул</DataPath>
@@ -163,6 +159,9 @@
 			<HorizontalScrollBar>true</HorizontalScrollBar>
 			<ContextMenu name="РезультатКонтекстноеМеню" id="6"/>
 			<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="7"/>
+			<Events>
+				<Event name="DetailProcessing">РезультатОбработкаРасшифровки</Event>
+			</Events>
 		</SpreadSheetDocumentField>
 	</ChildItems>
 	<Attributes>
@@ -256,21 +255,6 @@
 					</Type>
 				</Column>
 			</Columns>
-		</Attribute>
-		<Attribute name="ГруппаНоменклатуры" id="9">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа номенклатуры</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
 		</Attribute>
 	</Attributes>
 </Form>
